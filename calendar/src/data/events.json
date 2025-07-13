@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "date": "2025-07-11",
+    "time": "10:00",
+    "title": "Static Meeting",
+    "conflict": false
+  },
+  {
+    "id": 2,
+    "date": "2025-07-15",
+    "time": "14:00",
+    "title": "Client Call",
+    "conflict": false
+  }
+]
