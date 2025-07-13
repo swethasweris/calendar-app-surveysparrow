@@ -19,13 +19,15 @@ body {
 
 body nav {
   background: linear-gradient(to right, #4facfe, #00f2fe);
-  color: white;
+  color: rgb(10, 4, 69);
+  font-style:oblique;
   text-align: center;
   font-size: 22px;
   padding: 14px;
   margin-top: -10px;
   box-shadow: var(--shadow);
-  width:100%;
+  width:98%;
+  
 }
 
 .main-layout {
@@ -225,23 +227,36 @@ body nav {
   transition: background-color 0.2s ease;
 }
 
-.edit button {
-  background-color: #90caf9;
-  color: #000;
-  margin-left: 10px;
+.event-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
 }
 
-.edit button:hover {
+.event-actions button {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.event-actions button:first-child {
+  background-color: #90caf9;
+  color: #000;
+}
+
+.event-actions button:first-child:hover {
   background-color: #64b5f6;
 }
 
-.delete button {
+.event-actions button:last-child {
   background-color: #ef5350;
   color: white;
-  margin-left: 10px;
 }
 
-.delete button:hover {
+.event-actions button:last-child:hover {
   background-color: #e53935;
 }
 

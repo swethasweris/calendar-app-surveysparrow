@@ -35,8 +35,10 @@ export default function DateDetails({ events, setEvents }) {
       {filtered.map(ev => (
         <div key={ev.id} className={`event ${ev.conflict ? 'conflict' : ''}`}>
           {ev.time} - {ev.title}
-          <div className="edit"><button onClick={() => handleEdit(ev)}>Edit</button></div>
-          <div className="delete"><button onClick={() => handleDelete(ev.id)}>Delete</button></div>
+          < div className="event-actions">
+          <button onClick={() => handleEdit(ev)}>Edit</button>
+          <button onClick={() => handleDelete(ev.id)}>Delete</button>
+          </div>
         </div>
       ))}
       <div className="back">
