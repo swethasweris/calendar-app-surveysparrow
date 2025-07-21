@@ -1,9 +1,9 @@
 :root {
   --border-color: #ddd;
   --bg-light: #f9fafb;
-  --bg-primary: #e3f2fd;
+  --bg-primary: #e3fde3;
   --bg-event: #d0ebff;
-  --bg-conflict: #ffe0e0;
+  --bg-conflict: #f5c1c1;
   --today-border: #2196f3;
   --radius: 8px;
   --transition: 0.3s ease;
@@ -18,7 +18,7 @@ body {
 }
 
 body nav {
-  background: linear-gradient(to right, #4facfe, #00f2fe);
+  background: linear-gradient(to right, #4feafe, #b54bd5);
   color: rgb(10, 4, 69);
   font-style:oblique;
   text-align: center;
@@ -38,9 +38,10 @@ body nav {
 .sidebar {
   width: 260px;
   padding: 20px;
-  background: #ffffff;
+  background:linear-gradient(to bottom,rgb(99, 218, 231),rgb(173, 80, 210));
   border-right: 1px solid var(--border-color);
   box-shadow: var(--shadow);
+  
 }
 
 .sidebar h3 {
@@ -71,7 +72,7 @@ body nav {
 }
 
 .sidebar button {
-  background: #2196f3;
+  background: #2c21f3;
   width:100%;
   color: white;
   border: none;
@@ -97,7 +98,7 @@ body nav {
 .day-name {
   font-weight: bold;
   padding: 12px 0;
-  background-color: #333;
+  background-color: #b56ddb;
   color: #fff;
   text-align: center;
   border-radius: var(--radius);
@@ -105,7 +106,7 @@ body nav {
 
 .day-box {
   min-height: 120px;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
   padding: 10px;
@@ -122,7 +123,7 @@ body nav {
 }
 
 .day-box.empty {
-  background-color: #eaeaea;
+  background-color: #c5bcbc;
   cursor: default;
   box-shadow: none;
 }
@@ -212,9 +213,7 @@ body nav {
   background-color: #b2ebf2;
 }
 
-.event.conflict {
-  background-color: var(--bg-conflict);
-}
+
 
 .edit button,
 .delete button,
@@ -242,23 +241,12 @@ body nav {
   transition: background-color 0.2s ease;
 }
 
-.event-actions button:first-child {
-  background-color: #90caf9;
-  color: #000;
+.conflict{
+  background-color: rgb(225, 26, 26);
+
 }
 
-.event-actions button:first-child:hover {
-  background-color: #64b5f6;
-}
 
-.event-actions button:last-child {
-  background-color: #ef5350;
-  color: white;
-}
-
-.event-actions button:last-child:hover {
-  background-color: #e53935;
-}
 
 .back button {
   background-color: #424242;
