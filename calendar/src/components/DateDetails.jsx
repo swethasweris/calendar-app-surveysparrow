@@ -10,10 +10,13 @@ export default function DateDetails({ events, setEvents }) {
 
     const newTitle=prompt("enter title",event.title);
     if(!newTitle) return;
-    const newTime=prompt("enter title",event.time);
+    const newTime=prompt("enter time",event.time);
     if(!newTime) return;
     
     const conflict=events.some(ev=>ev.id!==event.id&&ev.time===newTime);
+    if(conflict){
+      alert("Time conflict,proceed anyway!");
+    }
 
     const updatedEvent=events.map((ev)=>(ev.id===event.id?{...ev,title:newTitle,time:newTime,conflict}:ev));
 
